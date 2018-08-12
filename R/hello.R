@@ -6,9 +6,10 @@
 #' @param myname your name. Required.
 hello <- function(myname = ""){
   if(myname == ""){
-    stop("Please tell me your name dickhead!")
+    stop("Please tell me your name chumphead!")
   }
   list(
     message = paste("hello", myname, "! This is", R.Version()$version.string)
   )
 }
+
