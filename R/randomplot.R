@@ -11,7 +11,7 @@ randomplot <- function(n, dist=c("normal", "uniform")){
   stopifnot(n < 1e6)
   
   if(dist == "normal"){
-    hist(rnorm(n))
+    print(hist(rnorm(n)))
   }
   
   if(dist == "uniform"){
@@ -19,5 +19,5 @@ randomplot <- function(n, dist=c("normal", "uniform")){
   }
   
   #return nothing
-  invisible();  
+  # invisible();  
 }
