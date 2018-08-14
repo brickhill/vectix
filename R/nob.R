@@ -18,8 +18,8 @@ ggplot(aes(x, y), data = ddata) +
   geom_smooth(method=lm, fill = NA, fullrange=TRUE, color = "black")
 x = ggsave("nob.png")
 list(
-  msg = 'test',
-  file = x
+  msg = 'test'
+  #file = x
 )
 dev.off()
 }
