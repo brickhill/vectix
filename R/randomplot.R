@@ -5,16 +5,19 @@
 #' @export
 #' @param n numer of random values 
 #' @param dist one of "normal" or "uniform".
+#'
+n = 1000
+dist = 'normal'
 randomplot <- function(n, dist=c("normal", "uniform")){
   #input validation
   dist <- match.arg(dist)
   stopifnot(n < 1e6)
   
   if(dist == "normal"){
-    # hist(rnorm(n))
-    list(
-      graph = paste(hist(rnorm(n)))
-    )
+    hist(rnorm(n))
+    #list(
+    #  graph = paste(hist(rnorm(n)))
+    #)
   }
   
   if(dist == "uniform"){
@@ -24,3 +27,4 @@ randomplot <- function(n, dist=c("normal", "uniform")){
   #return nothing
   # invisible();  
 }
+
