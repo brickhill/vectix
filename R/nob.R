@@ -16,7 +16,7 @@ ddata <- data.frame(x,y)
 ggplot(aes(x, y), data = ddata) +
   geom_point() +
   geom_smooth(method=lm, fill = NA, fullrange=TRUE, color = "black")
-x = ggsave("nob.png")
+# x = ggsave("nob.png")
 list(
   msg = paste('test')
   #file = x
