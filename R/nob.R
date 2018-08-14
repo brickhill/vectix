@@ -4,6 +4,8 @@
 #' 
 #' @export
 #' @param mydata some object or dataset
+#' 
+nob <- function(myname = ""){
 library(ggplot2)
 x <- 1:100
 y <- 1:100
@@ -20,3 +22,4 @@ list(
   file = x
 )
 dev.off()
+}
