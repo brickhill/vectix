@@ -11,7 +11,10 @@ randomplot <- function(n, dist=c("normal", "uniform")){
   stopifnot(n < 1e6)
   
   if(dist == "normal"){
-    print(hist(rnorm(n)))
+    # hist(rnorm(n))
+    list(
+      graph = paste(hist(rnorm(n)))
+    )
   }
   
   if(dist == "uniform"){
